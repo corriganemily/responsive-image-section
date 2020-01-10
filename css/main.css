@@ -5,11 +5,142 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   box-sizing: border-box;
-  font-family: sans-serif;
-  line-height: 1.3;
+  font: 100%/1.3 sans-serif;
+  background-color: #e2e2e2;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.img-flex {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.content {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.btn {
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #555;
+  }
+
+a {
+  padding: 0.5em 0.75em;
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width:25em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width:38em) {
+
+  .img-flex {
+    width: 100%;
+    margin-top: 3rem;
+    max-width: 50em;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 50em;
+  }
+
+  .body {
+    flex-direction: row;
+  }
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    padding-right: 1em;
+    font-size: 1.0rem;
+  }
+
+}
+
+@media only screen and (min-width:60em) {
+
+  html {
+    align-items: center;
+  }
+
+  .img-flex {
+    display: inline-block;
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .content {
+    display: inline-block;
+    width: 50%;
+    padding: 1rem;
+  }
+
+}
+@media only screen and (min-width:90em) {
+
+  html {
+    align-items: center;
+  }
+
+  .img-flex {
+    display: inline-block;
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .content {
+    display: inline-block;
+    width: 50%;
+    padding: 1rem;
+  }
+
 }
